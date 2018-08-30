@@ -1,4 +1,4 @@
-#N canvas 134 65 1195 807 10;
+#N canvas 134 30 1195 807 10;
 #X msg 293 36 write valine.text;
 #X obj 293 124 text define -k aminoacids;
 #A set C0 C1 OH - O \; C1 NH2 C2 C0 H \; C2 C4 H C3 C1 \; C3 C2 H H
@@ -291,11 +291,11 @@ H \; C4 H H C2 H \;;
 #X obj 577 638 catch~ K4;
 #X msg 693 644 wet \$1;
 #X obj 696 621 hsl 30 20 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 1300 1;
+-1 -1 700 1;
 #X obj 456 726 dac~ 1 2 2 1;
 #X obj 508 688 freeverb~;
 #X obj 696 664 hsl 30 20 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 900 1;
+-1 -1 1500 1;
 #X msg 693 687 dry \$1;
 #X obj 695 708 hsl 30 20 0 1 0 0 empty empty empty -2 -8 0 10 -262144
 -1 -1 0 1;
