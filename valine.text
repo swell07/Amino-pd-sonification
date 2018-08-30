@@ -1,0 +1,5 @@
+C0 C1 OH - O;
+C1 NH2 C2 C0 H;
+C2 C4 H C3 C1;
+C3 C2 H H H;
+C4 H H C2 H;
