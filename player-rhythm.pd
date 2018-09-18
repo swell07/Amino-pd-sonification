@@ -9,7 +9,7 @@
 #X msg 257 277 1;
 #X obj 256 305 +;
 #X obj 285 278 f;
-#X obj 257 177 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 257 177 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X floatatom 257 364 5 0 0 0 - - -, f 5;
 #X msg 419 154 0, f 2;
@@ -241,11 +241,11 @@
 #X msg 463 213 0 0 0;
 #X msg 490 241 1 200 500;
 #X msg 422 240 0.5 250 400;
-#X msg 1267 723 0.1;
 #X obj 413 579 throw~ K1;
 #X obj 474 579 throw~ K2;
 #X obj 537 580 throw~ K3;
 #X obj 601 580 throw~ K4;
+#X msg 1267 723 0.2;
 #X connect 0 0 1 0;
 #X connect 1 0 3 0;
 #X connect 2 0 213 0;
@@ -287,13 +287,13 @@
 #X connect 25 3 61 0;
 #X connect 26 0 57 0;
 #X connect 27 0 56 1;
-#X connect 28 0 233 0;
+#X connect 28 0 232 0;
 #X connect 29 0 44 0;
-#X connect 30 0 234 0;
+#X connect 30 0 233 0;
 #X connect 31 0 43 0;
-#X connect 32 0 235 0;
+#X connect 32 0 234 0;
 #X connect 33 0 45 0;
-#X connect 34 0 236 0;
+#X connect 34 0 235 0;
 #X connect 35 0 46 0;
 #X connect 36 0 37 0;
 #X connect 37 0 29 0;
@@ -387,7 +387,7 @@
 #X connect 109 0 110 0;
 #X connect 110 0 106 1;
 #X connect 111 0 106 0;
-#X connect 112 0 232 0;
+#X connect 112 0 236 0;
 #X connect 112 1 168 0;
 #X connect 113 0 114 0;
 #X connect 114 0 116 1;
@@ -534,4 +534,4 @@
 #X connect 229 0 212 1;
 #X connect 230 0 212 1;
 #X connect 231 0 212 1;
-#X connect 232 0 169 1;
+#X connect 236 0 169 1;
