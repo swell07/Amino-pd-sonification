@@ -1,4 +1,4 @@
-#N canvas 158 40 1154 766 10;
+#N canvas 332 96 1154 766 10;
 #X obj 257 203 metro 200;
 #X obj 257 226 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
@@ -17,7 +17,7 @@
 #X obj 329 192 t b b f;
 #X msg 359 214 0;
 #X symbolatom 330 49 10 0 0 0 - - -, f 10;
-#X obj 741 131 noise~;
+#X obj 654 123 noise~;
 #X obj 741 160 bp~ 1400 8;
 #X obj 741 181 bp~ 1400 8;
 #X obj 228 526 *~;

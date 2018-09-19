@@ -1,8 +1,8 @@
-#N canvas 309 23 1131 758 10;
+#N canvas 180 64 1131 781 10;
 #X msg 293 36 write valine.text;
 #X obj 293 124 text define -k aminoacids;
-#A set C0 C1 OH - O \; C1 NH2 C2 C0 H \; C2 H C4 C3 C1 \; C3 C2 H H
-H \; C4 H C5 H C2 \; C5 H H H C4;
+#A set C0 C1 OH - O \; C1 NH2 C2 C0 H \; C2 C4 H C3 C1 \; C3 C2 H H
+H \; C4 H H C2 H \;;
 #X msg 293 56 read valine.text;
 #X symbolatom 46 279 10 0 0 0 - - -, f 10;
 #X floatatom 46 72 5 0 5 0 - - -, f 5;
@@ -16,8 +16,8 @@ H \; C4 H C5 H C2 \; C5 H H H C4;
 #X symbolatom 127 159 10 0 0 0 - - -, f 10;
 #X obj 496 399 text search aminoacids 0;
 #X msg 931 316 symbol \$1;
-#X obj 46 101 text get aminoacids 1 4;
-#X obj 46 132 unpack s s s s;
+#X obj 44 111 text get aminoacids 1 4;
+#X obj 45 137 unpack s s s s;
 #X obj 46 301 s Left;
 #X obj 73 260 s Bottom;
 #X obj 100 218 s Right;
@@ -95,11 +95,11 @@ H \; C4 H C5 H C2 \; C5 H H H C4;
 #X obj 181 366 s clone;
 #X obj 218 174 t b s;
 #X obj 218 259 s clone;
-#X obj 910 52 tgl 25 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 910 52 tgl 25 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X msg 910 82 \; pd dsp \$1;
 #N canvas 0 22 450 278 (subpatch) 0;
-#X array array1 500 float 3;
+#X array array1 500 float 3 black black;
 #A 0 0.0912145 0.0912145 0.0912144 0.0912144 0.0912144 0.0912144 0.0912144
 0.0912144 0.0912143 0.0912143 0.0912143 0.0912143 0.0912143 0.0912143
 0.0912142 0.0912142 0.0912142 0.0912142 0.0912141 0.0912141 0.0912141
@@ -175,7 +175,7 @@ H \; C4 H C5 H C2 \; C5 H H H C4;
 #X coords 0 1 500 -1 200 140 1;
 #X restore 1093 451 graph;
 #N canvas 0 22 450 278 (subpatch) 0;
-#X array array2 500 float 3;
+#X array array2 500 float 3 black black;
 #A 0 -0.5 -0.5 -0.5 -0.5 -0.5 -0.5 -0.5 -0.5 -0.5 -0.5 -0.5 -0.5 -0.5
 -0.5 -0.5 -0.5 -0.5 -0.5 -0.5 -0.5 -0.5 -0.5 -0.5 -0.5 -0.5 -0.5 -0.5
 -0.5 -0.5 -0.5 -0.5 -0.5 -0.5 -0.5 -0.5 -0.5 -0.5 -0.5 -0.5 -0.5 -0.5
@@ -286,13 +286,13 @@ H \; C4 H C5 H C2 \; C5 H H H C4;
 #X obj 598 687 catch~ K4;
 #X msg 692 674 wet \$1;
 #X obj 695 651 hsl 30 20 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
+-1 -1 300 1;
 #X obj 529 737 freeverb~;
 #X obj 695 694 hsl 30 20 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 2200 1;
+-1 -1 2900 1;
 #X msg 692 717 dry \$1;
 #X obj 694 738 hsl 30 20 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 500 1;
+-1 -1 200 1;
 #X msg 691 761 roomsize \$1;
 #X obj 1284 757 hip~;
 #X obj 1285 785 lop~;
@@ -346,9 +346,12 @@ H \; C4 H C5 H C2 \; C5 H H H C4;
 #X msg 777 588 0.3 50;
 #X obj 128 77 t f b;
 #X text 512 801 7 8 4 3;
-#X obj 477 775 dac~ 1 2 2 1;
 #X text 172 704 same metro time - different beats;
 #X obj 175 686 clone player-rhythm-02 4;
+#X obj 477 775 dac~ 7 8 4 3;
+#X obj 200 523 gate 5;
+#X obj 197 452 hradio 15 0 0 6 empty empty empty 0 -8 0 10 -262144
+-1 -1 5;
 #X connect 0 0 1 0;
 #X connect 2 0 1 0;
 #X connect 3 0 17 0;
@@ -448,7 +451,7 @@ H \; C4 H C5 H C2 \; C5 H H H C4;
 #X connect 78 0 72 0;
 #X connect 79 0 74 0;
 #X connect 80 0 76 0;
-#X connect 82 0 165 0;
+#X connect 82 0 166 1;
 #X connect 84 0 69 0;
 #X connect 84 1 77 0;
 #X connect 85 0 71 0;
@@ -460,8 +463,8 @@ H \; C4 H C5 H C2 \; C5 H H H C4;
 #X connect 90 0 91 0;
 #X connect 94 0 1 0;
 #X connect 95 0 1 0;
-#X connect 98 0 163 0;
-#X connect 98 1 163 1;
+#X connect 98 0 165 0;
+#X connect 98 1 165 1;
 #X connect 101 0 99 0;
 #X connect 101 1 100 0;
 #X connect 103 0 98 1;
@@ -471,8 +474,8 @@ H \; C4 H C5 H C2 \; C5 H H H C4;
 #X connect 107 0 98 0;
 #X connect 107 0 109 0;
 #X connect 108 0 107 0;
-#X connect 109 0 163 2;
-#X connect 109 1 163 3;
+#X connect 109 0 165 2;
+#X connect 109 1 165 3;
 #X connect 110 0 111 0;
 #X connect 111 0 98 0;
 #X connect 111 0 109 0;
@@ -528,3 +531,9 @@ H \; C4 H C5 H C2 \; C5 H H H C4;
 #X connect 159 0 152 0;
 #X connect 160 0 148 0;
 #X connect 161 0 15 0;
+#X connect 166 0 125 0;
+#X connect 166 1 130 0;
+#X connect 166 2 124 0;
+#X connect 166 3 127 0;
+#X connect 166 4 164 0;
+#X connect 167 0 166 0;
