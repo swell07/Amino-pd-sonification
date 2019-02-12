@@ -1,8 +1,8 @@
-#N canvas 521 26 1131 758 10;
+#N canvas 757 38 1131 758 10;
 #X msg 293 36 write valine.text;
 #X obj 293 124 text define -k aminoacids;
-#A set C0 C1 OH - O \; C1 NH2 C2 C0 H \; C2 C4 H C3 C1 \; C3 C2 H H
-H \; C4 H H C2 H \;;
+#A set C0 C1 OH - O \; C1 NH2 C2 C0 H \; C2 H C4 C3 C1 \; C3 C2 H H
+H \; C4 H C5 H C2 \; C5 H H H C4;
 #X msg 293 56 read valine.text;
 #X symbolatom 46 279 10 0 0 0 - - -;
 #X floatatom 46 72 5 0 5 0 - - -;
@@ -74,13 +74,13 @@ H \; C4 H H C2 H \;;
 #X symbolatom 577 365 10 0 0 0 - - -;
 #X symbolatom 666 358 10 0 0 0 - - -;
 #X symbolatom 752 354 10 0 0 0 - - -;
-#X msg 46 399 0 L NH2;
+#X msg 46 399 0 L -;
 #X obj 46 368 list trim;
-#X msg 116 440 1 B C2;
+#X msg 116 440 1 B -;
 #X obj 116 412 list trim;
-#X msg 181 345 2 R C0;
+#X msg 181 345 2 R -;
 #X obj 181 323 list trim;
-#X msg 218 238 3 T H;
+#X msg 218 238 3 T -;
 #X obj 218 218 list trim;
 #X obj 46 344 list prepend set 0 L;
 #X obj 116 388 list prepend set 1 B;
@@ -286,10 +286,10 @@ H \; C4 H H C2 H \;;
 #X obj 598 687 catch~ K4;
 #X msg 692 674 wet \$1;
 #X obj 695 651 hsl 30 20 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
+-1 -1 200 1;
 #X obj 529 737 freeverb~;
 #X obj 695 694 hsl 30 20 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 2700 1;
+-1 -1 2500 1;
 #X msg 692 717 dry \$1;
 #X obj 694 738 hsl 30 20 0 1 0 0 empty empty empty -2 -8 0 10 -262144
 -1 -1 0 1;
@@ -347,13 +347,13 @@ H \; C4 H H C2 H \;;
 #X text 172 704 same metro time - different beats;
 #X obj 175 686 clone player-rhythm-02 4;
 #X obj 165 535 clone player-karplus-rhythm 4;
-#X obj 363 534 clone player-bouncing 4;
+#X obj 360 532 clone player-bouncing 4;
 #X obj 878 693 dac~ 7 8 2 1;
 #X obj 358 509 clone player-rolling 4;
 #X text 512 801 7 8 2 1;
 #X obj 170 509 clone player-fmsound 4;
 #X obj 361 554 clone player-bouncing-sim 4;
-#X obj 477 775 dac~ 1 2 2 1;
+#X obj 477 775 dac~ 7 8 2 1;
 #X connect 0 0 1 0;
 #X connect 2 0 1 0;
 #X connect 3 0 17 0;
@@ -453,7 +453,7 @@ H \; C4 H H C2 H \;;
 #X connect 78 0 72 0;
 #X connect 79 0 74 0;
 #X connect 80 0 76 0;
-#X connect 82 0 166 0;
+#X connect 82 0 169 0;
 #X connect 84 0 69 0;
 #X connect 84 1 77 0;
 #X connect 85 0 71 0;
