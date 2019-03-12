@@ -1,4 +1,4 @@
-#N canvas 57 66 1358 771 10;
+#N canvas -273 43 1108 771 10;
 #X obj 259 179 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 260 369 sel 0;
@@ -7,7 +7,7 @@
 #X msg 259 230 1;
 #X obj 258 258 +;
 #X obj 287 231 f;
-#X obj 257 115 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 257 115 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X floatatom 259 317 5 0 0 0 - - -;
 #X msg 257 76 1;
@@ -143,9 +143,9 @@
 #X obj 570 418 noise~;
 #X obj 570 448 >~ 0.998;
 #X obj 570 522 *~;
-#X obj 785 405 sel 0 1 2;
+#X obj 760 353 sel 0 1 2;
 #X msg 772 433 0;
-#X msg 746 431 1;
+#X msg 738 391 1;
 #X floatatom 902 385 5 0 0 0 - - -;
 #X floatatom 918 674 5 0 0 0 - - -;
 #X text 962 673 volume seperate control;
