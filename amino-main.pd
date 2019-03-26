@@ -1,8 +1,8 @@
-#N canvas 125 78 1190 759 10;
+#N canvas 2502 -291 1190 759 10;
 #X msg 293 36 write valine.text;
 #X obj 295 168 text define -k aminoacids;
-#A set C0 C1 - OH O \; C1 NH2 C2 C0 H \; C2 H C3 H C1 \; C3 - O OH
-C2 \;;
+#A set C0 C1 - OH O \; C1 C2 H C0 NH2 \; C2 C4 H C1 C3 \; C3 H C2 H
+H \; C4 H H C2 H \;;
 #X msg 293 56 read valine.text;
 #X symbolatom 46 279 10 0 0 0 - - -;
 #X floatatom 46 72 5 0 5 0 - - -;
@@ -95,7 +95,7 @@ C2 \;;
 #X obj 181 366 s clone;
 #X obj 218 174 t b s;
 #X obj 218 259 s clone;
-#X obj 910 52 tgl 25 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 910 52 tgl 25 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X msg 910 82 \; pd dsp \$1;
 #N canvas 0 22 450 278 (subpatch) 0;
@@ -457,7 +457,7 @@ C2 \;;
 #X connect 78 0 72 0;
 #X connect 79 0 74 0;
 #X connect 80 0 76 0;
-#X connect 82 0 124 0;
+#X connect 82 0 169 0;
 #X connect 84 0 69 0;
 #X connect 84 1 77 0;
 #X connect 85 0 71 0;
