@@ -192,8 +192,8 @@
 #X obj 1208 482 bp~ 400 10;
 #X obj 1207 504 bp~ 400 8;
 #X obj 1076 504 bp~ 200 8;
-#X msg 1079 411 0.5;
 #X msg 1210 411 0.5;
+#X msg 1079 411 0.8;
 #X connect 0 0 1 0;
 #X connect 1 0 3 0;
 #X connect 2 0 87 0;
@@ -393,14 +393,14 @@
 #X connect 161 0 164 0;
 #X connect 162 0 163 0;
 #X connect 163 0 160 1;
-#X connect 164 0 186 0;
+#X connect 164 0 187 0;
 #X connect 164 1 162 0;
 #X connect 165 0 183 0;
 #X connect 167 0 166 0;
 #X connect 168 0 171 0;
 #X connect 169 0 170 0;
 #X connect 170 0 167 1;
-#X connect 171 0 187 0;
+#X connect 171 0 186 0;
 #X connect 171 1 169 0;
 #X connect 172 0 173 0;
 #X connect 173 0 153 0;
@@ -416,5 +416,5 @@
 #X connect 183 0 184 0;
 #X connect 184 0 167 0;
 #X connect 185 0 160 0;
-#X connect 186 0 160 1;
-#X connect 187 0 167 1;
+#X connect 186 0 167 1;
+#X connect 187 0 160 1;
