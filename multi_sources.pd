@@ -1,4 +1,4 @@
-#N canvas -268 46 1358 771 10;
+#N canvas 35 73 1358 771 10;
 #X msg 418 229 0;
 #X symbolatom 328 56 10 0 0 0 - - -;
 #X obj 326 74 sel H O OH NH2 -;
