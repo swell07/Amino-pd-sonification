@@ -1,0 +1,3 @@
+#N canvas 0 23 565 278 10;
+#X obj 101 93 array define previous_clone_instances 100;
+#X obj 103 165 array define current_clone_instances 109;
