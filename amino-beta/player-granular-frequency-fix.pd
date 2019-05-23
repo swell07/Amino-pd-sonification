@@ -1,4 +1,4 @@
-#N canvas 524 40 1356 856 10;
+#N canvas 329 575 1356 856 10;
 #X obj 259 179 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 260 369 sel 0;
@@ -7,7 +7,7 @@
 #X msg 259 230 1;
 #X obj 258 258 +;
 #X obj 287 231 f;
-#X obj 257 115 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 257 115 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X floatatom 259 317 5 0 0 0 - - -;
 #X msg 257 76 1;
@@ -214,6 +214,7 @@
 #X obj 1070 505 split 200;
 #X obj 1072 530 * 1;
 #X msg 546 287 0.99968;
+#X text 984 262 637 958 1413 2017;
 #X connect 0 0 2 0;
 #X connect 1 0 57 0;
 #X connect 1 1 56 0;
