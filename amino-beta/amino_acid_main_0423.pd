@@ -1,10 +1,12 @@
-#N canvas 314 144 1395 856 10;
+#N canvas 2097 31 1395 856 10;
 #X obj 21 342 text define -k AminoElement;
-#A set 0 - \; 1 C \; 2 C \; 3 O \; 4 O \; 5 NH2 \; 6 C \; 7 H \; 8
-H \; 9 C \; 10 H \; 11 O \; 12 O \; 13 H \; 14 H \; 15 H \; 16 H;
+#A set 0 - \; 1 C \; 2 C \; 3 O \; 4 O \; 5 C \; 6 C \; 7 C \; 8 H
+\; 9 H \; 10 H \; 11 NH2 \; 12 H \; 13 H \; 14 H \; 15 C \; 16 H \;
+17 O \; 18 O \; 19 H \; 20 H \; 21 H \; 22 H;
 #X obj 22 151 text define -k AminoNumber;
-#A set 1 2 0 3 4 \; 2 5 6 1 7 \; 6 8 9 10 2 \; 9 0 11 12 6 \; 3 1 0
-13 0 \; 5 14 0 2 15 \; 12 9 0 16 0;
+#A set 1 2 0 3 4 \; 2 5 6 1 7 \; 5 11 12 2 13 \; 7 8 2 9 10 \; 6 14
+15 16 2 \; 15 0 17 18 6 \; 3 1 0 19 0 \; 11 20 0 2 21 \; 18 15 0 22
+0;
 #X obj 456 89 text get AminoNumber 1 4;
 #X msg 52 114 write AminoNumber-aspartic.text;
 #X msg 22 71 read AminoNumber-aspartic.text;
