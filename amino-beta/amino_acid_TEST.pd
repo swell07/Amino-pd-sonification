@@ -1,10 +1,11 @@
-#N canvas 287 99 1240 756 10;
+#N canvas 671 81 1240 756 10;
 #X obj 25 516 text define -k AminoElement;
 #A set 0 - \; 1 C \; 2 C \; 3 O \; 4 O \; 5 N \; 6 C \; 7 H \; 8 H
 \; 9 C \; 10 H \; 11 O \; 12 O \; 13 H \; 14 H \; 15 H \; 16 H;
 #X obj 26 392 text define -k AminoNumber;
-#A set 1 2 0 3 4 \; 2 5 6 1 7 \; 6 8 9 10 2 \; 9 0 11 12 6 \; 3 1 0
-13 0 \; 5 14 0 2 15 \; 12 9 0 16 0;
+#A set 1 2 0 3 4 \; 2 5 6 1 7 \; 5 11 12 2 13 \; 7 8 2 9 10 \; 6 14
+15 16 2 \; 15 0 17 18 6 \; 3 1 0 19 0 \; 11 20 0 2 21 \; 18 15 0 22
+0;
 #X obj 531 46 text get AminoNumber 1 4;
 #X msg 56 355 write AminoNumber-aspartic.text;
 #X msg 26 312 read AminoNumber-aspartic.text;
@@ -236,7 +237,7 @@
 #X msg 80 129 1 O T 1;
 #X text 89 -87 sound design;
 #X text 32 27 H C N O example;
-#N canvas 188 361 976 528 1-layer-Q 0;
+#N canvas 188 361 976 528 1-layer-Q 1;
 #X obj 107 58 bng 20 250 50 0 empty empty Q1 22 13 0 10 -232576 -1
 -1;
 #X obj 102 176 s clone;
@@ -316,7 +317,7 @@
 #X connect 30 0 20 0;
 #X connect 31 0 23 0;
 #X restore 176 50 pd 1-layer-Q;
-#N canvas 288 340 1084 525 2-layer-Q 0;
+#N canvas 816 135 1084 525 2-layer-Q 1;
 #X obj 72 59 bng 20 250 50 0 empty empty Q1 22 13 0 10 -232576 -1 -1
 ;
 #X obj 66 169 s clone;
@@ -453,7 +454,7 @@
 #X connect 50 0 14 0;
 #X connect 51 0 5 0;
 #X restore 175 84 pd 2-layer-Q;
-#N canvas 206 72 848 698 2-layer-Q1 0;
+#N canvas 88 181 848 698 2-layer-Q1 1;
 #X obj 456 28 bng 20 250 50 0 empty empty Q4 22 13 0 10 -204800 -1
 -1;
 #X obj 458 210 s clone;
@@ -498,7 +499,7 @@
 #X msg 351 566 3 H L 2;
 #X msg 230 110 1 C R 1;
 #X msg 232 131 2 C R 2;
-#X msg 235 151 3 H R 3;
+#X msg 235 151 5 H R 3;
 #X connect 0 0 23 0;
 #X connect 0 0 3 0;
 #X connect 0 0 4 0;
