@@ -1,4 +1,4 @@
-#N canvas 671 81 1240 756 10;
+#N canvas 40 122 1240 756 10;
 #X obj 25 516 text define -k AminoElement;
 #A set 0 - \; 1 C \; 2 C \; 3 O \; 4 O \; 5 N \; 6 C \; 7 H \; 8 H
 \; 9 C \; 10 H \; 11 O \; 12 O \; 13 H \; 14 H \; 15 H \; 16 H;
@@ -237,7 +237,7 @@
 #X msg 80 129 1 O T 1;
 #X text 89 -87 sound design;
 #X text 32 27 H C N O example;
-#N canvas 188 361 976 528 1-layer-Q 1;
+#N canvas 188 350 976 528 1-layer-Q 0;
 #X obj 107 58 bng 20 250 50 0 empty empty Q1 22 13 0 10 -232576 -1
 -1;
 #X obj 102 176 s clone;
@@ -317,7 +317,7 @@
 #X connect 30 0 20 0;
 #X connect 31 0 23 0;
 #X restore 176 50 pd 1-layer-Q;
-#N canvas 816 135 1084 525 2-layer-Q 1;
+#N canvas 196 135 1084 525 2-layer-Q 1;
 #X obj 72 59 bng 20 250 50 0 empty empty Q1 22 13 0 10 -232576 -1 -1
 ;
 #X obj 66 169 s clone;
@@ -454,7 +454,7 @@
 #X connect 50 0 14 0;
 #X connect 51 0 5 0;
 #X restore 175 84 pd 2-layer-Q;
-#N canvas 88 181 848 698 2-layer-Q1 1;
+#N canvas 88 180 848 698 2-layer-Q1 0;
 #X obj 456 28 bng 20 250 50 0 empty empty Q4 22 13 0 10 -204800 -1
 -1;
 #X obj 458 210 s clone;
@@ -549,8 +549,15 @@
 #X connect 37 0 11 0;
 #X connect 38 0 11 0;
 #X restore 176 117 pd 2-layer-Q1;
-#X obj 630 831 dac~ 7 8 3 4;
 #X obj 828 708 *~ 0.1;
+#X obj 286 311 delay;
+#X obj 284 285 t b f;
+#X msg 286 335 all -;
+#X floatatom 284 259 5 0 0 0 - - -;
+#X obj 285 366 s clone;
+#X obj 285 228 route /duration /player;
+#X obj 286 200 dumpOSC 7654;
+#X obj 629 832 dac~ 1 1 2 2;
 #X connect 2 0 8 0;
 #X connect 3 0 1 0;
 #X connect 4 0 1 0;
@@ -632,11 +639,11 @@
 #X connect 64 0 1 0;
 #X connect 65 0 1 0;
 #X connect 66 0 205 0;
-#X connect 66 0 224 1;
-#X connect 67 0 224 2;
+#X connect 66 0 232 1;
+#X connect 67 0 232 2;
 #X connect 68 0 204 0;
-#X connect 68 0 224 0;
-#X connect 69 0 224 3;
+#X connect 68 0 232 0;
+#X connect 69 0 232 3;
 #X connect 70 0 0 0;
 #X connect 71 0 0 0;
 #X connect 72 0 73 0;
@@ -691,7 +698,7 @@
 #X connect 106 0 100 0;
 #X connect 107 0 100 0;
 #X connect 108 0 97 0;
-#X connect 109 0 225 1;
+#X connect 109 0 224 1;
 #X connect 110 0 177 0;
 #X connect 111 0 137 0;
 #X connect 112 0 138 0;
@@ -748,7 +755,7 @@
 #X connect 174 0 128 0;
 #X connect 175 0 129 0;
 #X connect 176 0 130 0;
-#X connect 178 0 225 0;
+#X connect 178 0 224 0;
 #X connect 179 0 180 0;
 #X connect 180 0 178 0;
 #X connect 183 0 184 0;
@@ -757,11 +764,11 @@
 #X connect 185 0 186 0;
 #X connect 186 0 172 0;
 #X connect 187 0 204 0;
-#X connect 187 0 224 0;
+#X connect 187 0 232 0;
 #X connect 187 1 205 0;
-#X connect 187 1 224 1;
-#X connect 187 2 224 2;
-#X connect 187 3 224 3;
+#X connect 187 1 232 1;
+#X connect 187 2 232 2;
+#X connect 187 3 232 3;
 #X connect 188 0 189 0;
 #X connect 188 1 190 1;
 #X connect 189 0 190 0;
@@ -794,4 +801,12 @@
 #X connect 216 0 215 0;
 #X connect 217 0 215 0;
 #X connect 218 0 215 0;
-#X connect 225 0 187 0;
+#X connect 224 0 187 0;
+#X connect 225 0 227 0;
+#X connect 226 0 225 0;
+#X connect 226 1 225 1;
+#X connect 227 0 229 0;
+#X connect 228 0 226 0;
+#X connect 230 0 228 0;
+#X connect 230 1 229 0;
+#X connect 231 0 230 0;
