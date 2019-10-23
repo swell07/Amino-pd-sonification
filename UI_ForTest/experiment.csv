@@ -1,3 +1,9 @@
 num,T,L,B,R,time
-Question 1,C,N,C,C,2000
-Result 1,,,,,
+Question 1,C,H,H,O,2000
+Result 1,,,,,7176
+Question 2,C,C,O,C,4000
+Result 2,,,,,6805
+Question 3,N,C,H,N,1000
+Result 3,O,C,O,O,9476
+Question 4,O,N,N,H,2000
+Result 4,,,,,
