@@ -24,6 +24,7 @@ OscMessage MessagePlayer;
 int rectX, rectY, rectSize;
 color rectColor, highlightColor, selectedColor, currentColor;
 color elementColor, selectedelementColor, currentelementColor;
+int select_i, select_j; 
 
 MyRect[][] myrect;
 
@@ -96,13 +97,6 @@ void draw() {
   for (int i = 0; i < 4; i++) {
     for (int j = 0; j < 4; j++) {
 
-      //if ( myrect[i][j].overRect()) {
-      //  myrect[i][j].colorChange(highlightColor, elementColor);
-      //} else {
-      //  myrect[i][j].colorChange(rectColor, elementColor);
-      //}
-
-      // myrect[i][j].display();
       myrect[i][j].update();
     }
   }
@@ -118,13 +112,6 @@ void keyPressed() {
     saveTable(table, "experiment.csv"); 
     break;
   }
-
-  //if (key == CODED){
-  //  if(keyCode == ENTER){
-  //    SendToPD();
-  //    break;
-  //  }
-  //}
 }
 
 
@@ -230,48 +217,37 @@ void DisplayChoice() {
 void mousePressed() {
 
   for (int i = 0; i < 4; i++) {
-    if (i == 0) {
-      for (int j = 0; j < 4; j++) {
-        if ( myrect[i][j].overRect() && myrect[i][j].SelectedCheck()) {
-          myrect[i][j].colorChange(selectedColor, selectedelementColor);
-          myrect[i][j].elementSelected(1);
-          TableRow row = table.getRow(questionnum*2-1);
-          row.setString(elementdirection[i], elementname[j]);
-        } else {
-          myrect[i][j].elementSelected(0);
-          myrect[i][j].colorChange(rectColor, elementColor);
-        }
-        myrect[i][j].display();
-      }
-    } else if (i == 1) {
-      for (int j = 0; j < 4; j++) {
-        if ( myrect[i][j].overRect()) {
-          myrect[i][j].colorChange(selectedColor, selectedelementColor);
-          myrect[i][j].elementSelected(1);
-          TableRow row = table.getRow(questionnum*2-1);
-          row.setString(elementdirection[i], elementname[j]);
-        } else {
-          myrect[i][j].elementSelected(0);
-          myrect[i][j].colorChange(rectColor, elementColor);
-        }
-        myrect[i][j].display();
+    for (int j = 0; j < 4; j++) {
+      if ( myrect[i][j].overRect()) {
+        select_i = i;
+        select_j = j;
+
+        TableRow row = table.getRow(questionnum*2-1);
+        row.setString(elementdirection[i], elementname[j]);
+       
       }
     }
-    //if (!myrect[i][j].SelectedCheck()) {
-    //  myrect[i][j].colorChange(rectColor, elementColor);
-    //}
-
-
-
-
-    //if ( myrect[1][j].overRect()) {
-    //  myrect[1][j].colorChange(selectedColor, selectedelementColor);
-    //} else {
-    //  myrect[1][j].colorChange(rectColor, elementColor);
-    //}
-    //myrect[1][j].display();
   }
+
+  println(select_i + " ; " + select_j);
+
+
+  for (int j = 0; j < 4; j++) {
+    if (j == select_j) {
+      myrect[select_i][j].colorChange(selectedColor, selectedelementColor);
+      println("select: " + j + " , " + myrect[select_i][j].getColor());
+      myrect[select_i][j].display();
+    } else {
+      myrect[select_i][j].colorChange(rectColor, elementColor);
+      println("unselect: " + j + " , " + myrect[select_i][j].getColor());
+      myrect[select_i][j].display();
+    }    
+  }
+
 }
+
+
+
 
 
 void TableUser() {

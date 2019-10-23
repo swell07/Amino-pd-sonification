@@ -4,7 +4,6 @@ class MyRect {
   color cr, ce;
   String e, ed;
   boolean rectOver = false;
-  boolean selected = false;
 
   MyRect(int tempX, int tempY, int tempSize, color tempCr, String tempE, color tempCe, String tempEd) {
     x = tempX;
@@ -16,6 +15,11 @@ class MyRect {
     ce = tempCe;
     e = tempE;
     ed = tempEd;
+  }
+
+ void colorChange(color _cr, color _ce) {
+    cr = _cr;
+    ce = _ce;
   }
 
   void display() {
@@ -35,9 +39,9 @@ class MyRect {
     }
   }
 
-  void colorChange(color _cr, color _ce) {
-    cr = _cr;
-    ce = _ce;
+
+  color getColor() {
+    return cr;
   }
 
   String elementDirectionStatus() {
@@ -46,22 +50,6 @@ class MyRect {
 
   boolean overRect() {
     if (mouseX >= x && mouseX <= x + size && mouseY >= y && mouseY <= y + size) {
-      return true;
-    } else {
-      return false;
-    }
-  }
-
-  void elementSelected(int a) {
-    if (a == 1) {
-      selected = true;
-    } else {
-      selected = false;
-    }
-  }
-
-  boolean SelectedCheck() {
-    if (selected) {
       return true;
     } else {
       return false;
