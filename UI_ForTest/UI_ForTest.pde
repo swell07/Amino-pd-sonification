@@ -131,11 +131,13 @@ void SendToPD() {
     int ElementPlayer = elementplayer[i];
     String ElementName = elementname[(int)random(4)];
     String ElementDirection = elementdirection[i%4];
+    int ElementLayer = 1;
 
     MessagePlayer = new OscMessage("/player");
     MessagePlayer.add(ElementPlayer);
     MessagePlayer.add(ElementName);
     MessagePlayer.add(ElementDirection);
+    MessagePlayer.add(ElementLayer);
     oscP5.send(MessagePlayer, myRemoteLocation);
 
     println(questionnum + ": " + ElementTime, ElementPlayer, ElementName, ElementDirection);

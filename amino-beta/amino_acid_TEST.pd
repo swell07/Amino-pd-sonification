@@ -601,6 +601,10 @@
 #X obj 629 832 dac~ 7 8 3 4;
 #X obj 388 305 print;
 #X obj 302 238 unpackOSC;
+#X msg 234 269 2 H T 1;
+#X msg 210 189 4 C B 1;
+#X msg 246 213 3 O R 1;
+#X msg 217 247 1 N L 1;
 #X connect 2 0 8 0;
 #X connect 3 0 1 0;
 #X connect 4 0 1 0;
@@ -854,3 +858,7 @@
 #X connect 230 1 229 0;
 #X connect 232 0 235 0;
 #X connect 235 0 230 0;
+#X connect 236 0 229 0;
+#X connect 237 0 229 0;
+#X connect 238 0 229 0;
+#X connect 239 0 229 0;

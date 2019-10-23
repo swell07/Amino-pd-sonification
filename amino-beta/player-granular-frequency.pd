@@ -1,4 +1,4 @@
-#N canvas 1440 148 1080 990 10;
+#N canvas 270 128 1080 990 10;
 #X obj 259 179 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 260 369 sel 0;
@@ -413,9 +413,6 @@
 #X connect 172 0 168 0;
 #X connect 173 0 168 0;
 #X connect 174 0 57 0;
-#X connect 175 0 57 0;
-#X connect 176 0 57 0;
-#X connect 177 0 57 0;
 #X connect 181 0 69 0;
 #X connect 181 0 70 0;
 #X connect 181 0 71 0;
