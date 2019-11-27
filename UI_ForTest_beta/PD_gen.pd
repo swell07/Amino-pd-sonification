@@ -1,0 +1,9 @@
+#N canvas 430 77 545 382 10;
+#X obj 84 82 dumpOSC 7654;
+#X floatatom 84 148 5 0 0 0 - - -;
+#X msg 145 148 2 C T;
+#X obj 84 117 route /duration /player;
+#X obj 38 110 print;
+#X connect 0 0 3 0;
+#X connect 0 0 4 0;
+#X connect 3 0 1 0;

@@ -4,7 +4,7 @@ import oscP5.*;
 OscP5 oscP5;
 NetAddress myRemoteLocation;
 
-int questionnum = 0;
+int questionnum = 0, sourcenum = 0;
 int atomnumber = 4;
 int starttime, stoptime, resulttime;
 int[] elementplayer = {1, 2, 3, 4};
@@ -12,10 +12,10 @@ String[] elementname = {"H", "C", "O", "N"};
 String[] elementdirection = {"T", "L", "B", "R"};
 int[] playbacktime = {1000, 2000, 4000};
 
-Table table;
+Table table, table2;
 
-OscMessage MessageTime;
-OscMessage MessagePlayer;
+OscMessage MessageTime, MessageTime2;
+OscMessage MessagePlayer, MessagePlayer2;
 //OscMessage MessageElementName;
 //OscMessage MessageElementDirection;
 
@@ -131,13 +131,11 @@ void SendToPD() {
     int ElementPlayer = elementplayer[i];
     String ElementName = elementname[(int)random(4)];
     String ElementDirection = elementdirection[i%4];
-    int ElementLayer = 1;
 
     MessagePlayer = new OscMessage("/player");
     MessagePlayer.add(ElementPlayer);
     MessagePlayer.add(ElementName);
     MessagePlayer.add(ElementDirection);
-    MessagePlayer.add(ElementLayer);
     oscP5.send(MessagePlayer, myRemoteLocation);
 
     println(questionnum + ": " + ElementTime, ElementPlayer, ElementName, ElementDirection);
@@ -226,7 +224,6 @@ void mousePressed() {
 
         TableRow row = table.getRow(questionnum*2-1);
         row.setString(elementdirection[i], elementname[j]);
-       
       }
     }
   }
@@ -243,12 +240,61 @@ void mousePressed() {
       myrect[select_i][j].colorChange(rectColor, elementColor);
       println("unselect: " + j + " , " + myrect[select_i][j].getColor());
       myrect[select_i][j].display();
-    }    
+    }
   }
-
 }
 
 
+void SendToPD_Test2() {
+  sourcenum++;
+
+  //MessageTime2 = new OscMessage("/duration");
+  int ElementTime = playbacktime[questionnum%3];
+  // MessageTime2.add(ElementTime);
+  //oscP5.send(MessageTime2, myRemoteLocation);
+
+  //draw a new row in table for questions
+  TableRow newRow = table.addRow();
+  newRow.setString("num", "Source " + sourcenum);
+  //newRow.setInt("time", ElementTime);
+
+  // for (int i = 0; i <atomnumber; i++) {
+
+  int ElementPlayer = elementplayer[sourcenum];
+  String ElementName = elementname[(int)random(4)];
+  //random direction???
+  String ElementDirection = elementdirection[sourcenum%4];
+  int ElementLayer = sourcenum/4;
+
+  MessagePlayer2 = new OscMessage("/player");
+  MessagePlayer2.add(ElementPlayer);
+  MessagePlayer2.add(ElementName);
+  MessagePlayer2.add(ElementDirection);
+  MessagePlayer2.add(ElementLayer);
+  oscP5.send(MessagePlayer2, myRemoteLocation);
+
+  println(sourcenum + ": " + ElementTime, ElementPlayer, ElementName, ElementDirection);
+
+  //fill four generated results in this row
+  //TableQues(questionnum, ElementName, ElementDirection);
+  newRow.setString(ElementDirection, ElementName);//ElementDirection, ElementName
+  println(newRow.getString(ElementDirection));
+}
+
+
+void DrawTable_Test2() { 
+  table2 = new Table();
+  table2.addColumn("num");
+
+  //draw table: four direction columns
+  for (int i = 0; i<elementdirection.length; i++) {
+    table2.addColumn(elementdirection[i]);
+  }
+
+  //add time 
+  table2.addColumn("time");
+  saveTable(table, "experiment-2.csv");
+}
 
 
 
