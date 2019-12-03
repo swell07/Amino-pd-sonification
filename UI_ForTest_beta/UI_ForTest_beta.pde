@@ -38,11 +38,22 @@ int select_i, select_j;
 
 MyRect[][] myrect;
 
+String filename, f_year, f_month, f_day, f_hour, f_minute;
+
 void setup() {
   size(500, 500);
   frameRate(25);
   oscP5 = new OscP5(this, 4567);
   myRemoteLocation = new NetAddress("127.0.0.1", 7654);
+
+  // create excel table name
+  f_year = str(year());
+  f_month = str(month());
+  f_day = str(day());
+  f_hour = str(hour());
+  f_minute = str(minute());
+
+  filename = f_year + f_month + f_day + f_hour + f_minute + ".csv";
 
   // create a shuffle list
   sampleplayorder = new IntList();
@@ -132,7 +143,7 @@ void keyPressed() {
       questionnum++;
       SendToPD();
       DisplayChoice();
-      saveTable(table, "experiment.csv");
+      saveTable(table, filename);
       println("pretest");
       break;
 
@@ -142,6 +153,7 @@ void keyPressed() {
       sampleplayorder.shuffle();
       //draw posttest column
       DrawTable();
+      text();
       println("posttest now!");
     }
   } else {
@@ -150,7 +162,7 @@ void keyPressed() {
       questionnum++;
       SendToPD();
       DisplayChoice();
-      saveTable(table, "experiment.csv"); 
+      saveTable(table, filename); 
       break;
     }
   }
@@ -234,7 +246,7 @@ void DrawTable() {
     table.addColumn("time_post");
   }
 
-  saveTable(table, "experiment.csv");
+  saveTable(table, filename);
 }
 
 void DisplayChoice() {
@@ -266,10 +278,12 @@ void DisplayChoice() {
   resulttime = stoptime - starttime;
 
   //draw a new row in table for users  
-  if (questionnum > 0 && pretest == true && questionnum < samplename.length + 1) {
-    TableRow newRow = table.addRow();
-    newRow.setString("file_order", "R" + shuffleorder);
-    newRow.setString("num_pre", "Result " + questionnum);
+  if (pretest == true) {
+    if (questionnum > 0 && questionnum < samplename.length + 1) {
+      TableRow newRow = table.addRow();
+      newRow.setString("file_order", "R" + shuffleorder);
+      newRow.setString("num_pre", "Result " + questionnum);
+    }
 
     if (questionnum > 1 && questionnum <= samplename.length + 1) {
       TableRow row = table.getRow(questionnum*2-3);
@@ -277,10 +291,11 @@ void DisplayChoice() {
     }
   }
   //posttest
-  if (questionnum > 0 && pretest != true && questionnum < samplename.length + 1) {
-    TableRow findRow = table.findRow("R" + shuffleorder, "file_order");
-    findRow.setString("num_post", "Result " + questionnum);
-    //print("preorder" + preorder);
+  if (pretest != true) {
+    if (questionnum > 0 && questionnum < samplename.length + 1) {
+      TableRow findRow = table.findRow("R" + shuffleorder, "file_order");
+      findRow.setString("num_post", "Result " + questionnum);
+    }
 
     if (questionnum > 1 && questionnum <= samplename.length + 1 && preorder >= 0) {
       TableRow row = table.findRow("R" + preorder, "file_order");
@@ -326,61 +341,4 @@ void mousePressed() {
       myrect[select_i][j].display();
     }
   }
-}
-
-
-void SendToPD_Test2() {
-  sourcenum++;
-
-  //MessageTime2 = new OscMessage("/duration");
-  int ElementTime = playbacktime[questionnum%3];
-  // MessageTime2.add(ElementTime);
-  //oscP5.send(MessageTime2, myRemoteLocation);
-
-  //draw a new row in table for questions
-  TableRow newRow = table.addRow();
-  newRow.setString("num", "Source " + sourcenum);
-  //newRow.setInt("time", ElementTime);
-
-  // for (int i = 0; i <atomnumber; i++) {
-
-  int ElementPlayer = elementplayer[sourcenum];
-  String ElementName = elementname[(int)random(4)];
-  //random direction???
-  String ElementDirection = elementdirection[sourcenum%4];
-  int ElementLayer = sourcenum/4;
-
-  MessagePlayer2 = new OscMessage("/player");
-  MessagePlayer2.add(ElementPlayer);
-  MessagePlayer2.add(ElementName);
-  MessagePlayer2.add(ElementDirection);
-  MessagePlayer2.add(ElementLayer);
-  oscP5.send(MessagePlayer2, myRemoteLocation);
-
-  println(sourcenum + ": " + ElementTime, ElementPlayer, ElementName, ElementDirection);
-
-  //fill four generated results in this row
-  //TableQues(questionnum, ElementName, ElementDirection);
-  newRow.setString(ElementDirection, ElementName);//ElementDirection, ElementName
-  println(newRow.getString(ElementDirection));
-}
-
-
-void DrawTable_Test2() { 
-  table2 = new Table();
-  table2.addColumn("num");
-
-  //draw table: four direction columns
-  for (int i = 0; i<elementdirection.length; i++) {
-    table2.addColumn(elementdirection[i]);
-  }
-
-  //add time 
-  table2.addColumn("time");
-  saveTable(table, "experiment-2.csv");
-}
-
-
-
-void TableUser() {
 }
