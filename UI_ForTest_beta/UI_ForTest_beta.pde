@@ -41,7 +41,7 @@ MyRect[][] myrect;
 String filename, f_year, f_month, f_day, f_hour, f_minute;
 
 void setup() {
-  size(500, 500);
+  size(1000, 1000);
   frameRate(25);
   oscP5 = new OscP5(this, 4567);
   myRemoteLocation = new NetAddress("127.0.0.1", 7654);
@@ -75,7 +75,7 @@ void setup() {
   //set up interface design: colors and fonts
   rectX = width/2;
   rectY = height/2;
-  rectSize = 30;
+  rectSize = 60;
 
   rectColor = color(0);
   highlightColor = color(51);
@@ -121,6 +121,11 @@ void setup() {
       // myrect[i][j].display();
     }
   }
+  
+  background(0);
+  textSize(20);
+  fill(255);
+  text("Please press ENTER to start Pretest if you are ready.", 10, 20);
 }
 
 void draw() {  
@@ -153,7 +158,8 @@ void keyPressed() {
       sampleplayorder.shuffle();
       //draw posttest column
       DrawTable();
-      text();
+      background(0);
+      text("Please press ENTER to start Posttest.", 10, 20);
       println("posttest now!");
     }
   } else {
@@ -251,7 +257,7 @@ void DrawTable() {
 
 void DisplayChoice() {
   background(0);
-  textSize(15);
+  textSize(20);
   fill(255);
 
   if (questionnum < samplename.length + 1) {
@@ -268,7 +274,7 @@ void DisplayChoice() {
     }
   } else if (questionnum == samplename.length + 1) {
     if (pretest == true) {
-      text("Pretest ends, thank you!", 10, 20 );
+      text("Pretest ends, thank you! Please press TAB to continue.", 10, 20 );
     } else {
       text("Posttest ends, thank you!", 10, 20 );
     }

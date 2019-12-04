@@ -25,7 +25,7 @@ class MyRect {
   void display() {
     fill(cr);
     rect(x, y, size, size);  
-    textSize(20);
+    textSize(40);
     fill(ce);
     text(e, x+size/4, y+size*2/3);
   }
