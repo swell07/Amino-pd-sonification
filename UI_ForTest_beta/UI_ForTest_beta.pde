@@ -11,11 +11,11 @@ int totalsample = 24;
 IntList sampleplayorder;
 int shuffleorder, preorder, curorder;
 int[] elementplayer = {1, 2, 3, 4};
-String[] elementname = {"H", "C", "O", "N"};
+String[] elementname = {"H", "C", "N", "O"};
 String[] elementdirection = {"T", "L", "B", "R"};
 int[] playbacktime = {1000, 2000, 4000};
 
-String[] samplename = {"CCCH4", "CCCH8", "-CNC4", "-CNC8", "-COC4", "-COC8", "-NNN4", "-NNN8", "-NOC4", "-NOC8", 
+String[] samplename = {"CCCC4", "CCCC8", "-CNC4", "-CNC8", "-COC4", "-COC8", "-NNN4", "-NNN8", "-NOC4", "-NOC8", 
   "C-OO4", "C-OO8", "CCCH4", "CCCH8", "CCOH4", "CCOH8", "CHCH4", "CHCH8", "H-NC4", "H-NC8", "HHHC4", "HHHC8", 
   "HNHC4", "HNHC8", "HOHC4", "HOHC8", "NCCH4", "NCCH4"
 };
