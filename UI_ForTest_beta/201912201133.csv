@@ -1,0 +1,11 @@
+num_pre,file_order,T1,L1,B1,R1,time_pre
+Question 1,Q10,O,C,-,O,4000
+Result 1,R10,,,,,128784
+Question 2,Q20,C,H,H,H,4000
+Result 2,R20,C,H,H,H,9675
+Question 3,Q9,C,-,N,O,8000
+Result 3,R9,C,,N,O,9046
+Question 4,Q1,H,C,C,C,8000
+Result 4,R1,H,C,C,C,13435
+Question 5,Q0,H,C,C,C,4000
+Result 5,R0,,,,,
