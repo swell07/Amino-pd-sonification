@@ -1,0 +1,85 @@
+num_pre,file_order,T1,L1,B1,R1,time_pre,num_post,T2,L2,B2,R2,time_post
+Question 1,Q13,H,C,C,C,8000,Question 19,H,C,C,C,8000
+Result 1,R13,C,C,C,C,17934,Result 19,H,C,C,C,11039
+Question 2,Q17,H,C,H,C,8000,Question 8,H,C,H,C,8000
+Result 2,R17,H,C,H,C,15121,Result 8,H,C,,C,7759
+Question 3,Q21,C,H,H,H,8000,Question 18,C,H,H,H,8000
+Result 3,R21,C,H,H,H,11160,Result 18,C,H,H,H,11240
+Question 4,Q1,C,C,C,C,8000,Question 27,C,C,C,C,8000
+Result 4,R1,C,C,C,C,14085,Result 27,C,C,C,C,11081
+Question 5,Q15,H,C,C,O,8000,Question 10,H,C,C,O,8000
+Result 5,R15,C,C,C,N,19395,Result 10,H,C,C,O,10399
+Question 6,Q3,C,-,C,N,8000,Question 6,C,-,C,N,8000
+Result 6,R3,N,,N,O,11760,Result 6,C,,C,N,8638
+Question 7,Q2,C,-,C,N,4000,Question 14,C,-,C,N,4000
+Result 7,R2,C,,C,N,7321,Result 14,N,,N,O,7879
+Question 8,Q9,C,-,N,O,8000,Question 4,C,-,N,O,8000
+Result 8,R9,C,,O,O,7479,Result 4,C,,N,O,12839
+Question 9,Q23,C,H,N,H,8000,Question 28,C,H,N,H,8000
+Result 9,R23,C,H,N,H,8722,Result 28,C,H,N,H,6158
+Question 10,Q18,C,H,-,N,4000,Question 2,C,H,-,N,4000
+Result 10,R18,C,H,C,N,8079,Result 2,C,H,C,N,8880
+Question 11,Q16,H,C,H,C,4000,Question 5,H,C,H,C,4000
+Result 11,R16,H,C,H,C,7521,Result 5,H,C,H,C,9242
+Question 12,Q7,N,-,N,N,8000,Question 16,N,-,N,N,8000
+Result 12,R7,N,,N,N,12719,Result 16,N,,N,N,8798
+Question 13,Q20,C,H,H,H,4000,Question 13,C,H,H,H,4000
+Result 13,R20,C,H,H,H,8201,Result 13,C,H,H,H,10721
+Question 14,Q10,O,C,-,O,4000,Question 22,O,C,-,O,4000
+Result 14,R10,O,N,,O,6800,Result 22,N,C,O,O,8160
+Question 15,Q12,H,C,C,C,4000,Question 25,H,C,C,C,4000
+Result 15,R12,H,C,C,C,8719,Result 25,H,C,C,C,7600
+Question 16,Q24,C,H,O,H,4000,Question 20,C,H,O,H,4000
+Result 16,R24,H,H,C,H,8561,Result 20,C,H,H,C,8600
+Question 17,Q5,C,-,C,O,8000,Question 1,C,-,C,O,8000
+Result 17,R5,C,,C,N,10600,Result 1,C,,C,O,12801
+Question 18,Q8,C,-,N,O,4000,Question 15,C,-,N,O,4000
+Result 18,R8,N,C,O,O,9640,Result 15,C,,O,O,5122
+Question 19,Q0,C,C,C,C,4000,Question 24,C,C,C,C,4000
+Result 19,R0,C,C,C,C,7721,Result 24,H,H,H,H,7760
+Question 20,Q4,C,-,C,O,4000,Question 21,C,-,C,O,4000
+Result 20,R4,C,,C,N,8279,Result 21,C,,C,O,6641
+Question 21,Q11,O,C,-,O,8000,Question 26,O,C,-,O,8000
+Result 21,R11,O,C,N,O,10721,Result 26,O,C,O,O,8879
+Question 22,Q14,H,C,C,O,4000,Question 12,H,C,C,O,4000
+Result 22,R14,H,C,C,N,8160,Result 12,H,C,C,N,9081
+Question 23,Q22,C,H,N,H,4000,Question 23,C,H,N,H,4000
+Result 23,R22,C,H,N,H,8160,Result 23,C,H,N,H,9600
+Question 24,Q26,H,N,C,C,4000,Question 3,H,N,C,C,4000
+Result 24,R26,H,N,H,C,10440,Result 3,H,N,C,O,9200
+Question 25,Q27,H,N,C,C,4000,Question 9,H,N,C,C,4000
+Result 25,R27,H,N,C,C,9441,Result 9,H,N,H,H,9401
+Question 26,Q6,N,-,N,N,4000,Question 17,N,-,N,N,4000
+Result 26,R6,N,,N,N,6919,Result 17,N,,N,N,6361
+Question 27,Q25,C,H,O,H,8000,Question 7,C,H,O,H,8000
+Result 27,R25,C,H,N,H,10161,Result 7,C,H,O,H,9040
+Question 28,Q19,C,H,-,N,8000,Question 11,C,H,-,N,8000
+Result 28,R19,C,H,,N,7158,Result 11,C,H,,N,8359
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
