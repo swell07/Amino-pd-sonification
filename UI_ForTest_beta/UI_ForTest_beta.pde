@@ -121,7 +121,7 @@ void setup() {
       // myrect[i][j].display();
     }
   }
-  
+
   background(0);
   textSize(20);
   fill(255);
@@ -141,7 +141,11 @@ void draw() {
 }
 
 
-void keyPressed() { 
+void keyPressed() {
+  if (key == 27) {
+    key = 0;
+  }
+  
   if (pretest == true) {
     switch (keyCode) {
     case ENTER:
