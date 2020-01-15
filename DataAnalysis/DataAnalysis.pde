@@ -4,13 +4,13 @@ String Q_T_pre, R_T_pre, Q_L_pre, R_L_pre, Q_B_pre, R_B_pre, Q_R_pre, R_R_pre, Q
 int totalQ, score_T_pre, score_L_pre, score_B_pre, score_R_pre, score_T_post, score_L_post, score_B_post, score_R_post;
 int time_pre, time_post;
 
-String [] position = {"T1", "L1", "B1", "R1"};
-//String [] position = {"T2", "L2", "B2", "R2"};
+//String [] position = {"T1", "L1", "B1", "R1"};
+String [] position = {"T2", "L2", "B2", "R2"};
 MyElement myelement;
 
 void setup() {
   // selectInput("Select a file:", "fileSelected");
-  filename = "201912201529.csv";
+  filename = "202001141443.csv";
   table = loadTable(filename, "header");
   totalQ = 28;
 
@@ -47,8 +47,6 @@ void setup() {
     time_post = time_post + rowR.getInt("time_post");
 
     //println( rowR.getInt("time_pre") + " and " + time_pre + " THEN " +rowR.getInt("time_post") + " and " + time_post);
-
-    print(fileorder);
 
     if (R_T_pre.equals(Q_T_pre) == true) {
       score_T_pre += 1;
@@ -106,7 +104,8 @@ void setup() {
         myelement.Total(Q_R_pre);
       }
     }
-
+    print(fileorder);
+    println(" is :" + filescore);
   }
 
 
