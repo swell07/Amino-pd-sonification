@@ -1,12 +1,12 @@
 num_pre,file_order,T1,L1,B1,R1,time_pre,num_post,T2,L2,B2,R2,time_post
 Question 1,Q19,C,H,-,N,8000,Question 19,C,H,-,N,8000
-Result 1,R19,N,C,C,O,28134,Result 19,N,H,-,O,21881
+Result 1,R19,N,C,C,O,24134,Result 19,N,H,-,O,19881
 Question 2,Q5,C,-,C,O,8000,Question 1,C,-,C,O,8000
-Result 2,R5,N,-,N,O,10321,Result 1,N,-,N,O,18041
+Result 2,R5,N,-,N,O,10321,Result 1,C,-,C,O,18041
 Question 3,Q7,N,-,N,N,8000,Question 28,N,-,N,N,8000
-Result 3,R7,C,N,N,N,28446,Result 28,N,-,O,O,11600
+Result 3,R7,C,N,N,N,25446,Result 28,N,-,N,N,11600
 Question 4,Q26,H,N,C,C,4000,Question 16,H,N,C,C,4000
-Result 4,R26,C,O,O,N,31675,Result 16,H,O,N,N,18520
+Result 4,R26,C,O,O,N,28675,Result 16,H,O,N,N,15520
 Question 5,Q17,H,C,H,C,8000,Question 6,H,C,H,C,8000
 Result 5,R17,C,O,C,O,19002,Result 6,H,C,H,C,14442
 Question 6,Q22,C,H,N,H,4000,Question 26,C,H,N,H,4000
@@ -44,14 +44,14 @@ Result 21,R4,C,-,C,O,11518,Result 7,N,-,C,O,13718
 Question 22,Q16,H,C,H,C,4000,Question 27,H,C,H,C,4000
 Result 22,R16,C,C,C,N,18321,Result 27,H,H,N,N,11680
 Question 23,Q25,C,H,O,H,8000,Question 15,C,H,O,H,8000
-Result 23,R25,N,C,O,C,19360,Result 15,C,H,O,C,18401
+Result 23,R25,N,C,O,C,19360,Result 15,C,H,O,H,18401
 Question 24,Q3,C,-,C,N,8000,Question 5,C,-,C,N,8000
 Result 24,R3,N,-,N,O,16281,Result 5,C,-,C,N,14759
 Question 25,Q23,C,H,N,H,8000,Question 25,C,H,N,H,8000
 Result 25,R23,N,C,O,C,12800,Result 25,N,H,O,H,13520
 Question 26,Q21,C,H,H,H,8000,Question 2,C,H,H,H,8000
-Result 26,R21,N,C,C,C,12362,Result 2,N,H,H,H,19520
+Result 26,R21,N,C,C,C,12362,Result 2,N,H,H,H,17520
 Question 27,Q24,C,H,O,H,4000,Question 12,C,H,O,H,4000
-Result 27,R24,N,C,C,C,12719,Result 12,C,H,C,C,11961
+Result 27,R24,N,C,C,C,12719,Result 12,C,H,C,H,11961
 Question 28,Q27,H,N,C,C,4000,Question 8,H,N,C,C,4000
 Result 28,R27,N,O,C,C,15399,Result 8,H,O,C,N,19601
