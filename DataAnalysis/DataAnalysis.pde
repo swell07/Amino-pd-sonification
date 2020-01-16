@@ -4,13 +4,13 @@ String Q_T_pre, R_T_pre, Q_L_pre, R_L_pre, Q_B_pre, R_B_pre, Q_R_pre, R_R_pre, Q
 int totalQ, score_T_pre, score_L_pre, score_B_pre, score_R_pre, score_T_post, score_L_post, score_B_post, score_R_post;
 int time_pre, time_post;
 
-//String [] position = {"T1", "L1", "B1", "R1"};
-String [] position = {"T2", "L2", "B2", "R2"};
+String [] position = {"T1", "L1", "B1", "R1"};
+//String [] position = {"T2", "L2", "B2", "R2"};
 MyElement myelement;
 
 void setup() {
   // selectInput("Select a file:", "fileSelected");
-  filename = "202001141443.csv";
+  filename = "202001151720.csv";
   table = loadTable(filename, "header");
   totalQ = 28;
 
