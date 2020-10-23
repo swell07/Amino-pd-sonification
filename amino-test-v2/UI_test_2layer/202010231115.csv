@@ -1,0 +1,25 @@
+num_con1,file_order,con1_T1,con1_L1,con1_B1,con1_R1,con1_T2,con1_L2,con1_B2,con1_R2,time_con1,num_con2,con2_T1,con2_L1,con2_B1,con2_R1,con2_T2,con2_L2,con2_B2,con2_R2,time_con2
+Question 1,Q4,C,H,C,C,H,-,H,H,,Question 3,C,H,C,C,H,-,H,H,
+Result 1,R4,,N,,,H,,,,2556,Result 3,,,,-,,,,,1362
+Question 2,Q1,H,N,C,C,-,H,H,O,,Question 1,H,N,C,C,-,H,H,O,
+Result 2,R1,N,,,,,,,,1241,Result 1,,,-,O,C,N,,,4117
+Question 3,Q5,O,C,-,O,-,N,-,H,,Question 8,O,C,-,O,-,N,-,H,
+Result 3,R5,,,,N,,,,,1159,Result 8,-,,,,,,,,1160
+Question 4,Q6,H,C,C,O,-,N,H,H,,Question 4,H,C,C,O,-,N,H,H,
+Result 4,R6,,,,,,,,-,1162,Result 4,,,,,,,,-,1119
+Question 5,Q7,C,-,C,N,C,-,N,C,,Question 7,C,-,C,N,C,-,N,C,
+Result 5,R7,,,-,,,,,,1157,Result 7,,,,,,,,H,882
+Question 6,Q0,H,C,C,O,-,H,C,H,,Question 5,H,C,C,O,-,H,C,H,
+Result 6,R0,,,N,,,,,,1082,Result 5,H,H,,,-,,,,10881
+Question 7,Q3,C,C,C,C,H,H,H,H,,Question 2,C,C,C,C,H,H,H,H,
+Result 7,R3,,,,,,,,,1202,Result 2,,,O,,,,O,,1798
+Question 8,Q2,H,N,C,C,-,C,C,O,,Question 6,H,N,C,C,-,C,C,O,
+Result 8,R2,,,,,,,,,1191,Result 6,,,,H,,,,H,1917
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,

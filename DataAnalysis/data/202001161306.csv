@@ -14,7 +14,7 @@ Result 6,R3,C,-,-,N,11000,Result 17,C,-,C,O,7400
 Question 7,Q19,C,H,-,N,8000,Question 24,C,H,-,N,8000
 Result 7,R19,C,H,N,O,14120,Result 24,C,H,O,N,8359
 Question 8,Q26,H,N,C,C,4000,Question 13,H,N,C,C,4000
-Result 8,R26,H,O,-,N,8001,Result 13,H,O,C,C,6042
+Result 8,R26,C,H,O,-,8001,Result 13,H,O,C,C,6042
 Question 9,Q2,C,-,C,N,4000,Question 11,C,-,C,N,4000
 Result 9,R2,-,-,N,O,6319,Result 11,N,-,N,O,6560
 Question 10,Q25,C,H,O,H,8000,Question 6,C,H,O,H,8000
@@ -53,5 +53,5 @@ Question 26,Q9,C,-,N,O,8000,Question 20,C,-,N,O,8000
 Result 26,R9,C,-,O,N,9241,Result 20,C,-,N,O,7283
 Question 27,Q15,H,C,C,O,8000,Question 23,H,C,C,O,8000
 Result 27,R15,H,C,N,O,13361,Result 23,H,N,N,O,11760
-Question 28,Q27,H,N,C,C,4000,Question 18,H,N,C,C,4000
-Result 28,R27,C,H,O,-,8279,Result 18,H,N,C,C,8880
+Question 28,Q27,H,N,C,C,8000,Question 18,H,N,C,C,8000
+Result 28,R27,H,O,-,N,8279,Result 18,H,N,C,C,8880

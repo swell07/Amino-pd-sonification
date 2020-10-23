@@ -3,8 +3,8 @@ Question 1,C,H,H,H,8000,Q21,0.5,1,Question 11,C,H,H,H,8000
 Result 1,C,H,-,C,18666,R21,,,Result 11,C,H,H,H,8641
 Question 2,C,H,-,N,8000,Q19,1,0.25,Question 20,C,H,-,N,8000
 Result 2,C,H,-,N,10954,R19,,,Result 20,N,C,-,O,7842
-Question 3,H,N,C,C,4000,Q27,0.25,0.5,Question 22,H,N,C,C,4000
-Result 3,C,N,N,O,7520,R27,,,Result 22,H,N,-,N,10319
+Question 3,H,N,C,C,8000,Q27,0.25,0.75,Question 22,H,N,C,C,8000
+Result 3,C,N,N,O,7520,R27,,,Result 22,C,N,C,C,10319
 Question 4,C,H,O,H,4000,Q24,0.5,0.75,Question 19,C,H,O,H,4000
 Result 4,C,H,-,C,7841,R24,,,Result 19,C,H,-,H,7080
 Question 5,N,-,N,N,8000,Q7,0.5,0.5,Question 1,N,-,N,N,8000
@@ -31,8 +31,8 @@ Question 15,C,C,C,C,4000,Q0,0.75,0.5,Question 14,C,C,C,C,4000
 Result 15,-,C,C,C,5479,R0,,,Result 14,-,C,-,C,8640
 Question 16,C,-,N,O,8000,Q9,0.5,0.5,Question 4,C,-,N,O,8000
 Result 16,N,-,N,N,5843,R9,,,Result 4,H,C,N,O,12120
-Question 17,H,N,C,C,4000,Q26,0.5,0.75,Question 13,H,N,C,C,4000
-Result 17,H,C,C,H,5478,R26,,,Result 13,C,N,C,C,6600
+Question 17,H,N,C,C,4000,Q26,0.5,0.5,Question 13,H,N,C,C,4000
+Result 17,H,C,C,H,5478,R26,,,Result 13,H,N,-,N,6600
 Question 18,O,C,-,O,4000,Q10,0.75,0.5,Question 27,O,C,-,O,4000
 Result 18,-,C,-,O,7120,R10,,,Result 27,O,N,N,O,6040
 Question 19,H,C,H,C,4000,Q16,0.75,0.75,Question 21,H,C,H,C,4000

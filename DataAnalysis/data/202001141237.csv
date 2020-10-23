@@ -1,7 +1,7 @@
 num_pre,file_order,T1,L1,B1,R1,time_pre,num_post,T2,L2,B2,R2,time_post
 Question 1,Q16,H,C,H,C,4000,Question 20,H,C,H,C,4000
 Result 1,R16,H,-,-,O,18618,Result 20,H,C,-,C,6081
-Question 2,Q27,H,N,C,C,4000,Question 24,H,N,C,C,4000
+Question 2,Q27,H,N,C,C,8000,Question 24,H,N,C,C,8000
 Result 2,R27,H,C,-,O,23719,Result 24,H,N,C,C,5760
 Question 3,Q5,C,-,C,O,8000,Question 12,C,-,C,O,8000
 Result 3,R5,C,-,-,O,23403,Result 12,C,-,C,O,5878

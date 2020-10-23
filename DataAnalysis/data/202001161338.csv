@@ -29,7 +29,7 @@ Question 14,Q23,C,H,N,H,8000,Question 21,C,H,N,H,8000
 Result 14,R23,C,H,N,H,8480,Result 21,C,H,O,H,15320
 Question 15,Q8,C,-,N,O,4000,Question 25,C,-,N,O,4000
 Result 15,R8,C,-,O,O,6559,Result 25,C,-,O,O,5759
-Question 16,Q27,H,N,C,C,4000,Question 18,H,N,C,C,4000
+Question 16,Q27,H,N,C,C,8000,Question 18,H,N,C,C,8000
 Result 16,R27,C,C,C,C,12642,Result 18,H,N,C,C,7642
 Question 17,Q13,H,C,C,C,8000,Question 28,H,C,C,C,8000
 Result 17,R13,H,C,C,C,9399,Result 28,H,C,C,C,9239

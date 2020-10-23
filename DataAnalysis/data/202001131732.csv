@@ -12,9 +12,9 @@ Result 5,N,-,-,C,7160,R3,Result 28,C,-,C,N,7439
 Question 6,C,H,-,N,8000,Q19,Question 12,C,H,-,N,8000
 Result 6,N,N,-,C,8560,R19,Result 12,C,H,N,O,12719
 Question 7,H,N,C,C,4000,Q26,Question 26,H,N,C,C,4000
-Result 7,-,H,C,C,7000,R26,Result 26,H,C,C,C,7641
-Question 8,H,N,C,C,4000,Q27,Question 7,H,N,C,C,4000
-Result 8,C,N,N,C,7446,R27,Result 7,H,C,N,N,9680
+Result 7,-,H,N,C,7000,R26,Result 26,H,C,C,C,7641
+Question 8,H,N,C,C,8000,Q27,Question 7,H,N,C,C,8000
+Result 8,C,N,C,C,7446,R27,Result 7,H,C,N,N,9680
 Question 9,C,C,C,C,8000,Q1,Question 1,C,C,C,C,8000
 Result 9,N,N,N,C,7514,R1,Result 1,N,N,N,N,13779
 Question 10,C,H,H,H,8000,Q21,Question 21,C,H,H,H,8000

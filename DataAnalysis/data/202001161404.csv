@@ -11,7 +11,7 @@ Question 5,Q17,H,C,H,C,8000,Question 24,H,C,H,C,8000
 Result 5,R17,H,C,-,C,18120,Result 24,H,C,H,H,8881
 Question 6,Q2,C,-,C,N,4000,Question 19,C,-,C,N,4000
 Result 6,R2,O,-,-,N,11240,Result 19,C,-,-,N,5600
-Question 7,Q27,H,N,C,C,4000,Question 17,H,N,C,C,4000
+Question 7,Q27,H,N,C,C,8000,Question 17,H,N,C,C,8000
 Result 7,R27,C,C,C,C,13161,Result 17,H,N,C,C,6202
 Question 8,Q6,N,-,N,N,4000,Question 18,N,-,N,N,4000
 Result 8,R6,N,-,O,O,10280,Result 18,N,-,N,N,5360

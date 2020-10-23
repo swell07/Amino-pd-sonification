@@ -46,9 +46,9 @@ Result 22,R14,H,C,C,N,8160,Result 12,H,C,C,N,9081
 Question 23,Q22,C,H,N,H,4000,Question 23,C,H,N,H,4000
 Result 23,R22,C,H,N,H,8160,Result 23,C,H,N,H,9600
 Question 24,Q26,H,N,C,C,4000,Question 3,H,N,C,C,4000
-Result 24,R26,H,C,H,C,10440,Result 3,H,N,C,O,9200
-Question 25,Q27,H,N,C,C,4000,Question 9,H,N,C,C,4000
-Result 25,R27,H,C,C,C,9441,Result 9,H,N,H,H,9401
+Result 24,R26,H,C,H,C,10440,Result 3,H,N,H,H,9200
+Question 25,Q27,H,N,C,C,8000,Question 9,H,N,C,C,8000
+Result 25,R27,H,C,C,C,9441,Result 9,H,N,C,O,9401
 Question 26,Q6,N,-,N,N,4000,Question 17,N,-,N,N,4000
 Result 26,R6,N,-,N,N,6919,Result 17,N,-,N,N,6361
 Question 27,Q25,C,H,O,H,8000,Question 7,C,H,O,H,8000

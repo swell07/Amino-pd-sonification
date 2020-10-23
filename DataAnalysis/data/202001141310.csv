@@ -34,9 +34,9 @@ Result 16,R10,-,C,-,O,4201,Result 20,O,C,-,O,5759
 Question 17,Q20,C,H,H,H,4000,Question 23,C,H,H,H,4000
 Result 17,R20,N,N,-,C,11959,Result 23,C,H,H,H,7840
 Question 18,Q26,H,N,C,C,4000,Question 19,H,N,C,C,4000
-Result 18,R26,H,N,C,C,7921,Result 19,H,N,-,C,4922
-Question 19,Q27,H,N,C,C,4000,Question 15,H,N,C,C,4000
-Result 19,R27,H,N,O,C,9000,Result 15,H,N,C,C,6481
+Result 18,R26,H,N,O,C,7921,Result 19,H,N,-,C,4922
+Question 19,Q27,H,N,C,C,8000,Question 15,H,N,C,C,8000
+Result 19,R27,H,N,C,C,9000,Result 15,H,N,C,C,6481
 Question 20,Q11,O,C,-,O,8000,Question 18,O,C,-,O,8000
 Result 20,R11,O,N,-,O,11159,Result 18,O,C,-,O,7519
 Question 21,Q18,C,H,-,N,4000,Question 11,C,H,-,N,4000

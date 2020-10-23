@@ -53,5 +53,5 @@ Question 26,Q21,C,H,H,H,8000,Question 2,C,H,H,H,8000
 Result 26,R21,N,C,C,C,12362,Result 2,N,H,H,H,17520
 Question 27,Q24,C,H,O,H,4000,Question 12,C,H,O,H,4000
 Result 27,R24,N,C,C,C,12719,Result 12,C,H,C,H,11961
-Question 28,Q27,H,N,C,C,4000,Question 8,H,N,C,C,4000
+Question 28,Q27,H,N,C,C,8000,Question 8,H,N,C,C,8000
 Result 28,R27,N,O,C,C,15399,Result 8,H,O,C,N,19601

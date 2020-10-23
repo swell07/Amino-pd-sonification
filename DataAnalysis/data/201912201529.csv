@@ -35,10 +35,10 @@ Question 17,C,H,H,H,8000,Q21,1,0.75,Question 22,C,H,H,H,8000
 Result 17,C,H,H,H,9480,R21,,,Result 22,N,H,H,H,6681
 Question 18,N,-,N,N,4000,Q6,0,0.25,Question 20,N,-,N,N,4000
 Result 18,N,-,N,N,14080,R6,,,Result 20,O,-,O,O,6399
-Question 19,H,N,C,C,4000,Q26,0.75,1,Question 23,H,N,C,C,4000
-Result 19,H,O,C,C,9041,R26,,,Result 23,H,N,C,C,8360
-Question 20,H,N,C,C,4000,Q27,0.25,0.5,Question 1,H,N,C,C,4000
-Result 20,H,O,N,N,10120,R27,,,Result 1,H,C,C,N,10641
+Question 19,H,N,C,C,4000,Q26,0.25,0.5,Question 23,H,N,C,C,4000
+Result 19,H,O,N,N,9041,R26,,,Result 23,H,C,C,N,8360
+Question 20,H,N,C,C,8000,Q27,0.75,1,Question 1,H,N,C,C,8000
+Result 20,H,O,C,C,10120,R27,,,Result 1,H,N,C,C,10641
 Question 21,C,-,C,N,8000,Q3,0.75,0.25,Question 21,C,-,C,N,8000
 Result 21,C,-,C,O,13960,R3,,,Result 21,N,-,N,O,7280
 Question 22,H,C,C,C,8000,Q13,0.5,1,Question 15,H,C,C,C,8000

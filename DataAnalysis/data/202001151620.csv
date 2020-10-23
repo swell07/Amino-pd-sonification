@@ -9,7 +9,7 @@ Question 4,Q12,H,C,C,C,4000,Question 2,H,C,C,C,4000
 Result 4,R12,H,O,O,N,13606,Result 2,H,N,C,N,10079
 Question 5,Q10,O,C,-,O,4000,Question 19,O,C,-,O,4000
 Result 5,R10,-,O,N,O,25756,Result 19,-,N,-,O,6960
-Question 6,Q27,H,N,C,C,4000,Question 25,H,N,C,C,4000
+Question 6,Q27,H,N,C,C,8000,Question 25,H,N,C,C,8000
 Result 6,R27,H,C,O,N,24880,Result 25,H,C,O,N,11480
 Question 7,Q11,O,C,-,O,8000,Question 8,O,C,-,O,8000
 Result 7,R11,O,N,-,O,16760,Result 8,O,N,-,O,10920

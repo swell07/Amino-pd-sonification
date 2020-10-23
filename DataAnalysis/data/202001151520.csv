@@ -49,7 +49,7 @@ Question 24,C,C,C,C,8000,Q1,Question 24,C,C,C,C,8000
 Result 24,H,H,H,H,12121,R1,Result 24,C,C,C,C,11841
 Question 25,C,-,C,O,8000,Q5,Question 25,C,-,C,O,8000
 Result 25,H,-,H,O,13600,R5,Result 25,C,-,C,O,8119
-Question 26,H,N,C,C,4000,Q27,Question 28,H,N,C,C,4000
+Question 26,H,N,C,C,8000,Q27,Question 28,H,N,C,C,8000
 Result 26,C,H,H,N,13080,R27,Result 28,H,C,C,C,14240
 Question 27,H,C,H,C,8000,Q17,Question 21,H,C,H,C,8000
 Result 27,H,H,H,C,20241,R17,Result 21,H,C,H,C,12040

@@ -1,0 +1,29 @@
+#N canvas 45 23 852 589 10;
+#X obj 139 151 float;
+#X obj 190 151 + 1;
+#X obj 139 169 t f f;
+#X msg 139 117 0;
+#X obj 139 210 sel 1;
+#X obj 126 233 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 139 192 < 99;
+#X obj 139 81 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 139 51 inlet;
+#X msg 210 296 0;
+#X obj 185 232 t b f;
+#X obj 207 321 array set current_clone_instances;
+#X connect 0 0 2 0;
+#X connect 1 0 0 1;
+#X connect 2 0 6 0;
+#X connect 2 1 1 0;
+#X connect 2 1 10 0;
+#X connect 3 0 0 0;
+#X connect 4 0 5 0;
+#X connect 5 0 0 0;
+#X connect 6 0 4 0;
+#X connect 7 0 3 0;
+#X connect 8 0 7 0;
+#X connect 9 0 11 0;
+#X connect 10 0 9 0;
+#X connect 10 1 11 1;

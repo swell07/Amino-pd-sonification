@@ -21,8 +21,8 @@ Question 10,Q25,C,H,O,H,8000,Question 24,C,H,O,H,8000
 Result 10,R25,C,H,O,H,10960,Result 24,C,H,O,H,4759
 Question 11,Q17,H,C,H,C,8000,Question 13,H,C,H,C,8000
 Result 11,R17,H,N,N,H,7320,Result 13,H,C,H,C,8121
-Question 12,Q27,H,N,C,C,4000,Question 5,H,N,C,C,4000
-Result 12,R27,H,O,H,N,5960,Result 5,H,C,N,N,8720
+Question 12,Q27,H,N,C,C,8000,Question 5,H,N,C,C,8000
+Result 12,R27,H,O,O,C,9680,Result 5,H,C,N,N,11721
 Question 13,Q9,C,-,N,O,8000,Question 12,C,-,N,O,8000
 Result 13,R9,C,-,O,O,10081,Result 12,C,-,O,O,9000
 Question 14,Q20,C,H,H,H,4000,Question 21,C,H,H,H,4000
@@ -44,7 +44,7 @@ Result 21,R5,C,-,C,O,5918,Result 8,C,-,C,O,9040
 Question 22,Q7,N,-,N,N,8000,Question 6,N,-,N,N,8000
 Result 22,R7,H,-,H,H,14040,Result 6,O,-,O,O,7800
 Question 23,Q26,H,N,C,C,4000,Question 26,H,N,C,C,4000
-Result 23,R26,H,O,O,C,9680,Result 26,H,O,H,C,11721
+Result 23,R26,H,O,H,N,5960,Result 26,H,O,H,C,8720
 Question 24,Q15,H,C,C,O,8000,Question 28,H,C,C,O,8000
 Result 24,R15,H,H,H,O,7281,Result 28,H,H,H,O,5199
 Question 25,Q11,O,C,-,O,8000,Question 25,O,C,-,O,8000

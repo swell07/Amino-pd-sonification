@@ -17,7 +17,7 @@ Question 8,C,H,-,N,8000,Q19,0.5,0.25,Question 8,C,H,-,N,8000
 Result 8,H,H,-,C,10121,R19,,,Result 8,C,C,C,H,8962
 Question 9,H,C,H,C,4000,Q16,0.5,0.25,Question 26,H,C,H,C,4000
 Result 9,H,H,H,H,32799,R16,,,Result 26,H,H,C,H,6800
-Question 10,H,N,C,C,4000,Q27,0.75,0.75,Question 19,H,N,C,C,4000
+Question 10,H,N,C,C,8000,Q27,0.75,0.75,Question 19,H,N,C,C,8000
 Result 10,H,N,C,H,9520,R27,,,Result 19,H,N,C,H,10361
 Question 11,O,C,-,O,4000,Q10,0.75,0.5,Question 1,O,C,-,O,4000
 Result 11,-,C,-,O,15481,R10,,,Result 1,O,C,N,H,18679

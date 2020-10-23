@@ -53,6 +53,6 @@ Question 26,C,C,C,C,8000,Q1,0.5,0,Question 5,C,C,C,C,8000
 Result 26,-,C,H,C,5761,R1,,,Result 5,N,N,N,N,9401
 Question 27,C,H,H,H,4000,Q20,0.75,1,Question 14,C,H,H,H,4000
 Result 27,H,H,H,H,6760,R20,,,Result 14,C,H,H,H,5560
-Question 28,H,N,C,C,4000,Q27,0.25,0.75,Question 21,H,N,C,C,4000
+Question 28,H,N,C,C,8000,Q27,0.25,0.75,Question 21,H,N,C,C,8000
 Result 28,C,N,-,-,6359,R27,,,Result 21,H,N,-,C,6198
 ,,,,,,,15.5,18.75,,,,,,
